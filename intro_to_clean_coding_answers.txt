@@ -1,0 +1,105 @@
+1. clean code is code that is simple easy to read maintain, and reusable. it is important because it allows other developers to understand what the code is for and make additions or changes if needed.
+2. another object that could have had similar errors could be a cellphones emergency dial feature, if code isnt written in a standard format and its difficult to see a bug for this type of feature it could be fatal for many.
+3. no, the code has to many comments and the variables should be named better.
+  FUNCTION tempConvert(x, y)
+  IF y = "F" THEN
+    SET celsius to (x−32) * (5/9)
+    print celcius
+   ELSE IF y = "C" THEN
+    SET fahrenheit to x * 1.8000 + 32.00
+    print fahrenheit
+  end function
+
+4. yes
+
+5.  a.
+  FUNCTION checkOutCustomer(subTotal, discountRate, paymentType)
+     PRINT "Your total due is: " + subTotal * discountRate + (subTotal * tax)
+
+     CALL getPayment RETURNING amount
+     IF paymentType = 'CASH' THEN
+         PRINT "Change due: " + amount - subTotal * discountRate + (subTotal * tax)
+     ELSE IF paymentType = 'CREDIT CARD' THEN
+         PRINT "Your credit card has been charged: " + subTotal * discountRate + (subTotal * tax)
+     END IF
+  END FUNCTION
+
+  b.
+  FUNCTION checkoutBook(book, guest)
+    IF guest.accountActive && NOT(guest.hasOverdueBooks) && guest.outstandingFees = 0 THEN
+      APPEND book to guest.books
+      SET book.status to "Checked Out"
+      PRINT "Your books have been issued."
+    ELSE
+     PRINT "Unable to check out book."
+    END IF
+  END FUNCTION
+  c.
+  CLASS BankAccount
+   FUNCTION displayBalance
+      PRINT balance
+   END FUNCTION
+  END CLASS
+
+  CLASS Transactions
+   FUNCTION deposit(amount)
+      SET balance to balance + amount
+   END FUNCTION
+
+   FUNCTION withdraw(amount)
+       IF balance > amount THEN
+         SET balance to balance - amount
+       END
+   END FUNCTION
+  END CLASS
+
+  CLASS Offers
+   FUNCTION creditCardOffer
+       IF NOT(customer.hasCreditCard) THEN
+           CALL offerCreditCard
+       END
+   END FUNCTION
+
+   FUNCTION checkStatus
+       IF NOT(customer.hasCheckingAccount) THEN
+           CALL offerCheckingAccount
+       END
+   END FUNCTION
+  END CLASS
+ ....
+ ....
+ ....
+
+ END
+6.
+function squaringSumOrSum(arr){
+  var sum = 0;
+  for(let i = 0;i < arr.length; i++){
+    sum+= arr[i];
+  }
+  if(Number.isInteger(Math.sqrt(sum))){
+  return Math.sqrt(sum);
+  }else{
+  return sum;
+  }
+}
+
+7.
+function checkDoubles(arr){
+  for (let i = 0; i < arr.length; i++){
+    for (let j = 0; j < arr.length; j++){
+      if (j != i && arr[i] == arr[j]){
+        return true;
+      }
+    }
+  }
+  return false;
+}
+
+8.function isAnagram(str1,str2){
+ var arr1 = str1.split('').sort();
+ var arr2 = str2.split('').sort();
+ var strg1 = arr1.join();
+ var strg2 = arr2.join();
+  return strg1 == strg2
+}
