@@ -1,0 +1,34 @@
+1. they use pseudocode to brainstorm and get have a understanding of what a code should do.
+2. nothing its not computable code.
+
+pseudocode
+1.
+  input first Number
+  input second Number
+  if first number > second Number
+    print first Number
+  else if second number > first Number
+    print second Number
+  else
+    print equal number value.
+  end if
+2.
+  init num = 1
+  while num <= 100
+    print num
+    increment num by 1
+  end while
+3.
+  input name
+   for loop through phonebook names
+    name = phonebook[i]name
+     return phonebook[i] number
+  end
+4.
+function phoneSearch(name){
+  for (let i=0; i<phonebook.length; i++){
+    if(name == phonebook[i].name){
+    return phonebook[i].number ;
+    }
+  }
+}
