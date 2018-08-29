@@ -1,0 +1,21 @@
+1.
+  a.
+    var line =  ["Vivian", "Ava", "Josh", "Patrick", "Mike"]
+  b.
+  line.push("Mary")
+  c.
+    return line.indexOf("Josh")
+  d.
+    if(line.indexOf("Emily") >= 0){
+    return line.indexOf("Emily")
+    }else{
+    return "cant find Emily"
+    }
+  e.
+  line.splice(line.indexOf("Ava"),0,"Melissa")
+  f.
+  line.splice(line.indexOf("Mike"),1,)
+2.
+  another real world example would be an array of objects for adding packages to a shipping truck
+3.
+  theres multiple ways by adding the total weight of all the objects, making sure that the volume isnt over cap. and adding packages(weight,volume,goingTo) with a single function.
