@@ -10,7 +10,7 @@
     print fahrenheit
   end function
 
-4. yes
+4. yes, because everything is understandable, its indented properly and all the variables are labeled with their intent
 
 5.  a.
   FUNCTION checkOutCustomer(subTotal, discountRate, paymentType)
@@ -21,7 +21,6 @@
          PRINT "Change due: " + amount - subTotal * discountRate + (subTotal * tax)
      ELSE IF paymentType = 'CREDIT CARD' THEN
          PRINT "Your credit card has been charged: " + subTotal * discountRate + (subTotal * tax)
-     END IF
   END FUNCTION
 
   b.
